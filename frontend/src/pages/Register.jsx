@@ -10,16 +10,24 @@ export default function Register() {
   const [password, setPassword] = useState("");
 
   const navigate=useNavigate();
-  const handleRegister=async()=>{
-      try{
-            const res=await api.post("/auth/signup",{email,password});
-            alert(res.data.message);
-            navigate("/");
-      }
-      catch(error){
-            alert("Error occurred while registering.",error.response?.data?.message || "Registration Error");
-      }
+const handleRegister = async () => {
+  try{
+      const res = await api.post(
+          "auth/signup",
+          {email,password}
+      );
+
+      alert(res.data.message);
+      navigate("/");
+
+  }catch(error){
+
+      alert(
+        error.response?.data?.message ||
+        "Registration Error"
+      );
   }
+}
 
   return (
     <div className="register-page">
