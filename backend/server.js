@@ -9,8 +9,12 @@ const dsaRoutes = require("./routes/dsaRoutes");
 const interviewRoutes = require("./routes/interviewRoutes");
 
 const app = express();
-
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://crack-track-blush.vercel.app",
+    credentials: true
+  })
+);
 app.use(express.json());
 
 // ROUTES CONNECTED HERE
