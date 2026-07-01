@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api=axios.create({
-    baseURL:" https://cracktrack.onrender.com",
+    baseURL:" https://cracktrack.onrender.com/api",
     headers: {
 
         "Content-Type":

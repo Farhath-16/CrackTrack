@@ -11,7 +11,7 @@ const interviewRoutes = require("./routes/interviewRoutes");
 const app = express();
 app.use(
   cors({
-    origin: "https://crack-track-blush.vercel.app/api",
+    origin: "https://crack-track-blush.vercel.app",
     credentials: true
   })
 );
