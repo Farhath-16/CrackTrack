@@ -1,0 +1,453 @@
+/* =========================
+   HEADER
+========================= */
+
+.interview-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+
+}
+
+.interview-header h1 {
+
+    color: white;
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+}
+
+.interview-header button {
+
+    background: linear-gradient(
+        135deg,
+        #7C3AED,
+        #A855F7
+    );
+
+    border: none;
+
+    color: white;
+
+    padding: 14px 24px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+.interview-header button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* =========================
+   EXPERIENCE LIST
+========================= */
+
+.experience-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+/* =========================
+   EXPERIENCE CARD
+========================= */
+
+.experience-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.04
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    transition: 0.3s;
+
+}
+
+.experience-card:hover {
+
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(
+            168,
+            85,
+            247,
+            0.4
+        );
+
+}
+
+.experience-card h3 {
+
+    color: white;
+
+    margin-bottom: 6px;
+
+    font-size: 1.2rem;
+
+}
+
+.experience-card p {
+
+    color: #94A3B8;
+
+    margin: 0;
+
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.experience-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.result-badge {
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+}
+
+.result-badge.selected {
+
+    background:
+        rgba(
+            34,
+            197,
+            94,
+            0.15
+        );
+
+    color: #4ADE80;
+
+}
+
+.result-badge.rejected {
+
+    background:
+        rgba(
+            239,
+            68,
+            68,
+            0.15
+        );
+
+    color: #F87171;
+
+}
+
+.result-badge.pending {
+
+    background:
+        rgba(
+            245,
+            158,
+            11,
+            0.15
+        );
+
+    color: #FBBF24;
+
+}
+
+.round-badge {
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(
+            59,
+            130,
+            246,
+            0.15
+        );
+
+    color: #60A5FA;
+
+    font-size: 0.85rem;
+
+}
+
+/* =========================
+   CARD BUTTONS
+========================= */
+
+.experience-right button {
+
+    background: #1E293B;
+
+    color: white;
+
+    border: 1px solid #334155;
+
+    padding: 8px 14px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.experience-right button:hover {
+
+    border-color: #A855F7;
+
+}
+
+/* =========================
+   MODAL OVERLAY
+========================= */
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.7
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+
+    width: 550px;
+
+    max-width: 90%;
+
+    background: #0F172A;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.modal h2 {
+
+    color: white;
+
+    margin: 0;
+
+}
+
+.modal p {
+
+    color: #CBD5E1;
+
+    margin: 0;
+
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.modal input,
+
+.modal select,
+
+.modal textarea {
+
+    background: #1E293B;
+
+    color: white;
+
+    border: 1px solid #334155;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    resize: vertical;
+
+}
+
+.modal input::placeholder,
+
+.modal textarea::placeholder {
+
+    color: #94A3B8;
+
+}
+
+.modal select option {
+
+    background: #1E293B;
+
+    color: white;
+
+}
+
+/* =========================
+   MODAL BUTTONS
+========================= */
+
+.modal-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+}
+
+.cancel-btn {
+
+    background: transparent;
+
+    border: 1px solid #475569;
+
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+.save-btn {
+
+    background: linear-gradient(
+        135deg,
+        #7C3AED,
+        #A855F7
+    );
+
+    border: none;
+
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .experience-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+    .experience-right {
+
+        width: 100%;
+
+    }
+
+}

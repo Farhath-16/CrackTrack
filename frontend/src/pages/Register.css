@@ -1,0 +1,169 @@
+.register-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #0B1120;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* Subtle Aurora Glow */
+
+.register-page::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    background: radial-gradient(
+        circle,
+        rgba(168, 85, 247, 0.25),
+        transparent 70%
+    );
+
+    top: -150px;
+
+    right: -150px;
+}
+
+.register-page::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    background: radial-gradient(
+        circle,
+        rgba(56, 189, 248, 0.15),
+        transparent 70%
+    );
+
+    bottom: -150px;
+
+    left: -150px;
+}
+
+.register-card {
+
+    width: 420px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+.register-card h1 {
+
+    color: #F8FAFC;
+
+    text-align: center;
+
+    font-size: 28px;
+}
+
+.register-card p {
+
+    color: #94A3B8;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.register-card input {
+
+    padding: 14px;
+
+    border: 1px solid transparent;
+
+    border-radius: 12px;
+
+    background: #1E293B;
+
+    color: white;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.register-card input:focus {
+
+    border-color: #A855F7;
+}
+
+.register-card button {
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #A855F7;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.register-card button:hover {
+
+    transform: translateY(-2px);
+
+    opacity: 0.95;
+}
+
+.register-card a {
+
+    color: #A855F7;
+
+    text-decoration: none;
+
+    margin-left: 5px;
+
+    font-weight: 600;
+}
+
+.register-card a:hover {
+
+    text-decoration: underline;
+}

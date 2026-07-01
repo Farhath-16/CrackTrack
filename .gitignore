@@ -1,0 +1,17 @@
+# node modules
+node_modules/
+**/node_modules/
+
+# env files
+.env
+**/.env
+
+# firebase secret
+backend/config/serviceAccountKey.json
+
+# build files
+dist/
+**/dist/
+
+# logs
+*.log

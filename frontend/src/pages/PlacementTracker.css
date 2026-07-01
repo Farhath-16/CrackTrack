@@ -1,0 +1,262 @@
+.tracker-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.drive-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.drive-table th {
+
+    text-align: left;
+
+    padding: 18px;
+
+    color: #94A3B8;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.drive-table td {
+
+    padding: 18px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.add-drive-btn {
+
+    background: linear-gradient(
+        135deg,
+        #7C3AED,
+        #A855F7
+    );
+
+    border: none;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.modal {
+
+    width: 420px;
+
+    background: #0F172A;
+
+    border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    border-radius: 20px;
+
+    padding: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.modal input {
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.04
+    );
+
+    color: white;
+}
+
+.modal-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+}
+.modal-actions button {
+
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+.modal-actions button:first-child {
+
+    background: rgba(255,255,255,0.05);
+
+    color: #CBD5E1;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.modal-actions button:first-child:hover {
+
+    background: rgba(255,255,255,0.08);
+}
+.modal-actions button:last-child {
+
+    background: linear-gradient(
+        135deg,
+        #7C3AED,
+        #A855F7
+    );
+
+    color: white;
+}
+
+.modal-actions button:last-child:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(
+            168,
+            85,
+            247,
+            0.35
+        );
+}
+
+.drive-table select {
+
+    width: 100%;
+
+    padding: 8px 12px;
+
+    background: #1E293B;
+
+    color: white;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.drive-table select:focus {
+
+    border-color: #A855F7;
+
+    box-shadow:
+        0 0 0 3px rgba(
+            168,
+            85,
+            247,
+            0.15
+        );
+}
+
+.drive-table select option {
+
+    background: #0F172A;
+
+    color: white;
+}
+
+
+.delete-btn {
+
+    background: rgba(
+        239,
+        68,
+        68,
+        0.15
+    );
+
+    color: #EF4444;
+
+    border: 1px solid rgba(
+        239,
+        68,
+        68,
+        0.25
+    );
+
+    padding: 8px 14px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+
+    background: rgba(
+        239,
+        68,
+        68,
+        0.25
+    );
+}
